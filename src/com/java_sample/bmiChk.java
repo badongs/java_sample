@@ -35,15 +35,14 @@ public class bmiChk {
 
 		double bmi = w / (t * t);
 		String bmiCheck = "";
-		if (bmi < 18.5) {
+		if (bmi < 18.5)
 			bmiCheck = "저체중";
-		} else if (bmi >= 18.5 && bmi <= 22.9) {
+		else if (bmi < 23)
 			bmiCheck = "정상";
-		} else if (bmi >= 23 && bmi <= 24.9) {
+		else if (bmi < 25)
 			bmiCheck = "과체중";
-		} else if (bmi >= 25) {
+		else
 			bmiCheck = "비반";
-		}
 
 		System.out.println("당신의 BMI수치는" + bmi + "이고 당신은 " + bmiCheck + "입니다.");
 	}
